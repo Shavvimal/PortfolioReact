@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Home, AboutMe, TechStack, Portfolio, Contact} from './pages';
-import { Header, Modal } from './layout';
+import { Header, Modal, Aside } from './layout';
 import './styles/app.css';
 
 
@@ -15,6 +15,7 @@ function App(){
     return (
         <>
             <Header />
+            <Aside /> 
             <Home />
             <AboutMe />
             <TechStack />
