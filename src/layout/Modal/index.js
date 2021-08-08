@@ -5,7 +5,7 @@ const Modal = (props) => {
         <div className={props.isItOpen ? 'hidden' : ''} class="randomPost-modal font-light animated fadeIn faster fixed w-full h-100 inset-0 overflow-hidden flex justify-center items-center animated fadeIn faster"
             style={{ background: "rgba(0,0,0,.7)" }}>
             <div class="container border shadow m-1 w-96 rounded-xl overflow-hidden mx-4 bg-white  relative">
-                <div class="container-content p-7">
+                <div class="container-content p-6">
                     <div class="flex justify-between items-center pb-1">
                         <p class="mb-2 font-semibold text-lg mb-4 ">Thanks for visiting!</p>
                         <div class="modal-close cursor-pointer" onClick={() => props.updateOpen()}>
