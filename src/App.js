@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Home} from './pages';
+import {Home, AboutMe, TechStack, Portfolio, Contact} from './pages';
 import { Header, Modal } from './layout';
 import './styles/app.css';
 
@@ -16,7 +16,11 @@ function App(){
         <>
             <Header />
             <Home />
-            <Modal isItOpen={ModalClose} updateOpen={handleModalClose} />
+            <AboutMe />
+            <TechStack />
+            <Portfolio />
+            <Contact />
+            {/* <Modal isItOpen={ModalClose} updateOpen={handleModalClose} /> */}
 
         </>
     )
