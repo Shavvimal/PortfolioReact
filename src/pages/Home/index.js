@@ -19,7 +19,9 @@ import { bubble1Anim,
     bubble15Anim, 
     initAnim  } from "./assets/animateHome.js"
 
-
+    let toloc = (id) => {
+        window.location.hash = id
+    }
 
 
 const Home = () => {
@@ -116,7 +118,7 @@ const Home = () => {
     return (
         
         
-        <section class="slide1 text-white">
+        <section id="homesect" class="slide1 text-white">
             <div class=" w-full h-full flex  flex-wrap">
 
                 {/* <!-- Section Left --> */}
@@ -139,6 +141,7 @@ const Home = () => {
                         <div class="flex flex-row sizebub pos-bub-1 ">
 
                             <img className="bubble1Anim2" ref={(el) => (bubble1Anim2 = el)} id="bubble1main" class="w-full h-full  absolute bubble1" src={mainBubble} alt="mainBubble1"/>
+
 
                             <lord-icon className="bubble1Anim1" ref={(el) => (bubble1Anim1 = el)} class=" h-5/6 w-5/6 absolute content bubble1" src="https://cdn.lordicon.com/fgkmrslx.json" trigger="loop-on-hover"
                                 colors="primary:#FFFFFF,secondary:#FFFFFF" href="#" stroke="13">

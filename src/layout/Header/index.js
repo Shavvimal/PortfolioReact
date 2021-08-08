@@ -10,9 +10,13 @@ const Header = () => {
         initAnim(animHeader) 
     }, [])
 
+    let toloc = (id) => {
+        window.location.hash = id
+    }
+
     return (
         <header className="animHeader" ref={(el) => (animHeader = el)} >
-            <NavLink exact to="/" activeClassName="current">
+            <NavLink exact to="/" activeClassName="current" onClick={() => toloc("homesect")}>
             <div class="logo">
                 <svg id='logo' class=" h-10 ml-2 mb-1" viewBox="0 0 1936 1935" >
                     <path fill-rule="evenodd" d="M1570.9,952.7c112.9-37.1,225.8-74.1,338.7-111.2c-16.7-43.8-261.7,25.6-304.1,37.9
@@ -26,14 +30,14 @@ const Header = () => {
           C708.4,1439.5,227.5,1685.4,109.1,1707.4z"></path>
                 </svg>
             </div> </NavLink>
-            <nav class="text-white mt-2 mr-2">
-                <ul>
-                    <NavLink to="/AboutMe" activeClassName="current">About Me</NavLink>
-                    <NavLink to="/TechStack" activeClassName="current">Tech Stack</NavLink>
-                    <NavLink to="/Portfolio" activeClassName="current">Portfolio</NavLink>
-                    <NavLink to="/Contact" activeClassName="current">Contact Me</NavLink>
+
+                <ul class="text-white text-right">
+                    <NavLink to="/AboutMe" activeClassName="current" onClick={() => toloc("AboutSect")}>About Me</NavLink>
+                    <NavLink to="/TechStack" activeClassName="current" onClick={() => toloc("Techsect")}>Tech Stack</NavLink>
+                    <NavLink to="/Portfolio" activeClassName="current" onClick={() => toloc("portfoliosect")}>Portfolio</NavLink>
+                    <NavLink to="/Contact" activeClassName="current" onClick={() => toloc("contactsect")}>Contact Me</NavLink>
                 </ul>
-            </nav>
+
 
         </header>
 
