@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './style.css'
+import './styleHome.css'
 import Asset2 from './assets/Asset2.svg'
 import Asset3 from './assets/asAsset 3.svg'
 import mainBubble from './assets/Bubble_main.svg'
@@ -17,7 +17,7 @@ import { bubble1Anim,
     bubble12Anim, 
     bubble14Anim, 
     bubble15Anim, 
-    initAnim  } from "./assets/animate.js"
+    initAnim  } from "./assets/animateHome.js"
 
 
 
@@ -138,9 +138,9 @@ const Home = () => {
 
                         <div class="flex flex-row sizebub pos-bub-1 ">
 
-                            <img className="bubble1Anim1" ref={(el) => (bubble1Anim1 = el)} id="bubble1main" class="w-full h-full  absolute bubble1" src={mainBubble} alt="mainBubble1"/>
+                            <img className="bubble1Anim2" ref={(el) => (bubble1Anim2 = el)} id="bubble1main" class="w-full h-full  absolute bubble1" src={mainBubble} alt="mainBubble1"/>
 
-                            <lord-icon className="bubble1Anim2" ref={(el) => (bubble1Anim2 = el)} class=" h-5/6 w-5/6 absolute content bubble1" src="https://cdn.lordicon.com/fgkmrslx.json" trigger="loop-on-hover"
+                            <lord-icon className="bubble1Anim1" ref={(el) => (bubble1Anim1 = el)} class=" h-5/6 w-5/6 absolute content bubble1" src="https://cdn.lordicon.com/fgkmrslx.json" trigger="loop-on-hover"
                                 colors="primary:#FFFFFF,secondary:#FFFFFF" href="#" stroke="13">
                             </lord-icon>
 
