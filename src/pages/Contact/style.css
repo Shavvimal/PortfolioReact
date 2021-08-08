@@ -1,0 +1,21 @@
+.bodyheadercol  {
+    color:#8553FE;   
+}
+
+.heeboo {
+    font-family: 'Heebo', sans-serif;
+}
+
+.bg-custom {
+--tw-bg-opacity: 1;
+background-color: rgba(133, 83, 254, var(--tw-bg-opacity));
+}
+
+.bg-svg {
+    /* background-image: url(./assets/Bubble_main.svg); */
+    background-image: linear-gradient(0deg, #318aff, #b633fd);
+  }
+
+  #contact-card {
+      transform: translate(0%, -40%);
+  }
