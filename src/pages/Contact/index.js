@@ -9,8 +9,9 @@ const Contact = () => {
 
 
     return (
-        <>
+        <>    <a id="contactsect" ></a>
 <div class="w-full flex-col bg-svg rounded-t-full py-10 mt-96 ">
+
             <div id="contact-card" class=" absolute container border shadow-xl m-1 w-5/6 lg:w-1/3 rounded-xl overflow-hidden mt-10 m-auto bg-white  relative">
                 <div class="container-content p-10 lg:p-20">
 

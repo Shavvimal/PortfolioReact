@@ -10,11 +10,11 @@ const AboutMe = () => {
 
     return (
 
-<div class="bg-white raleway  my-20">
+<div id="AboutSect" class="bg-white raleway  my-20">
 
   <div class="w-full flex flex-wrap">
 {/*  <!-- Section Left --> */}
-    <div class="w-full bg-red md:w-2/3 flex flex-col border">
+    <div class="w-full pt-10 bg-red md:w-2/3 flex flex-col border">
 
       <div id="left" class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-44">
         <h1 class="bodyheadercol text-left text-4xl font-extrabold">About Me</h1>

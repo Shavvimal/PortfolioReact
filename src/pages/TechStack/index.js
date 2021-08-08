@@ -10,7 +10,7 @@ const TechStack = () => {
 
     return (
 
-<div class="bg-white raleway  my-20">
+<div id="Techsect" class="bg-white raleway  my-20">
 
   <div class="w-full h-1/2 flex flex-col gradientTech md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-44 overflow-hidden text-white">  
   <h1 class="text-left text-4xl font-extrabold mt-12 w-1/2">My Tech Stack</h1>
