@@ -1,22 +1,25 @@
 import React, {useEffect, useRef} from 'react';
 import { NavLink } from 'react-router-dom';
-import { initAnim  } from "./assets/animate.js"
+import {  finalAnim } from "./assets/animate.js"
 import './style.css'
 import logo from './assets/favicon.png'
 
 const Aside = () => {
-    // let animHeader  = useRef(null)
+  let animHeader  = useRef(null)
 
-    // useEffect(() => {
-    //     initAnim(animHeader) 
-    // }, [])
+
+
+    useEffect(() => {
+        finalAnim(animHeader) 
+    }, [])
+
 
     let toloc = (id) => {
         window.location.hash = id
     }
 
     return (
-            <nav
+            <nav className="animHeader" ref={(el) => (animHeader = el)} id="navtrans"
       class=" lg:flex items-center justify-between w-12 bg-white h-64 my-auto rounded-r-3xl p-1 bg-white shadow-md border md:visible hidden py-10">
 
       <div class="flex items-center  justify-center flex-col" >
