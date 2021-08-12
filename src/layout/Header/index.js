@@ -1,13 +1,15 @@
 import React, {useEffect, useRef} from 'react';
 import { NavLink } from 'react-router-dom';
-import { initAnim  } from "./assets/animate.js"
+import {  finalAnim } from "./assets/animate.js"
 import './style.css'
 
 const Header = () => {
     let animHeader  = useRef(null)
 
+
+
     useEffect(() => {
-        initAnim(animHeader) 
+        finalAnim(animHeader) 
     }, [])
 
     let toloc = (id) => {
@@ -37,7 +39,6 @@ const Header = () => {
                     <NavLink to="/Portfolio" activeClassName="current" onClick={() => toloc("portfoliosect")}>Portfolio</NavLink>
                     <NavLink to="/Contact" activeClassName="current" onClick={() => toloc("contactsect")}>Contact Me</NavLink>
                 </ul>
-
 
         </header>
 
