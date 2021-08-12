@@ -25,7 +25,7 @@ h1, h2 ,h3, h4, p{
   /* Track */
   ::-webkit-scrollbar-track {
   /* margin-right: 5px; */
-margin: 1;
+margin: 1.5;
     background: #ffffff; 
   }
    
