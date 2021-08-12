@@ -2,7 +2,7 @@ import gsap from "gsap"
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const bubble1Anim = (elem1, elem2) => {
-let tlb1 = gsap.timeline({repeat: 200});
+let tlb1 = gsap.timeline({repeat: -1});
 tlb1.to([elem1, elem2], {
     duration: 3,
     y:4,
@@ -16,10 +16,10 @@ tlb1.to([elem1, elem2], {
 }
 
 export const bubble2Anim = (elem1, elem2) => {
-let tlb2 = gsap.timeline({repeat: 200});
+let tlb2 = gsap.timeline({repeat: -1});
 tlb2.to([elem1, elem2], {
-    duration: 2.3,
-    y:-5,
+    duration: 5,
+    y:-4,
     ease: "power2. inout", 
 } );
 tlb2.to([elem1, elem2], {
@@ -30,13 +30,13 @@ tlb2.to([elem1, elem2], {
 }
 
 export const bubble3Anim = (elem1, elem2) => {
-let tlb3 = gsap.timeline({repeat: 200});
-tlb3.to('.bubble3', {
+let tlb3 = gsap.timeline({repeat: -1});
+tlb3.to([elem1, elem2], {
     duration: 2.5,
     y:4,
     ease: "power2. inout", 
 } );
-tlb3.to('.bubble3', {
+tlb3.to([elem1, elem2], {
     duration:2.5,
     y:0,
     ease: "power2. inout", 
@@ -44,7 +44,7 @@ tlb3.to('.bubble3', {
 }
 
 export const bubble4Anim = (elem1, elem2) => {
-let tlb4 = gsap.timeline({repeat: 200});
+let tlb4 = gsap.timeline({repeat: -1});
 tlb4.to([elem1, elem2], {
     duration: 2,
     y:3,
@@ -59,7 +59,7 @@ tlb4.to([elem1, elem2], {
 
 // Non Central Bubbles
 export const bubble5Anim = (elem1) => {
-let tlb5 = gsap.timeline({repeat: 200});
+let tlb5 = gsap.timeline({repeat: -1});
 tlb5.to(elem1, {
     duration:0,
     y:270,
@@ -73,7 +73,7 @@ tlb5.to(elem1, {
 }
 
 export const bubble6Anim = (elem1) => {
-let tlb6 = gsap.timeline({repeat: 200});
+let tlb6 = gsap.timeline({repeat: -1});
 tlb6.to(elem1, {
     duration:0,
     y:270,
@@ -87,7 +87,7 @@ tlb6.to(elem1, {
 }
 
 export const bubble7Anim = (elem1) => {
-let tlb7 = gsap.timeline({repeat: 200, delay: 1});
+let tlb7 = gsap.timeline({repeat: -1, delay: 1});
 tlb7.to(elem1, {
     duration:0,
     y:190,
@@ -102,7 +102,7 @@ tlb7.to(elem1, {
 }
 
 export const bubble8Anim = (elem1) => {
-let tlb8 = gsap.timeline({repeat: 200, delay: 3});
+let tlb8 = gsap.timeline({repeat: -1, delay: 3});
 tlb8.to(elem1, {
     duration:0,
     y:200,
@@ -116,7 +116,7 @@ tlb8.to(elem1, {
 }
 
 export const bubble9Anim = (elem1) => {
-let tlb9 = gsap.timeline({repeat: 200, delay: 2});
+let tlb9 = gsap.timeline({repeat: -1, delay: 2});
 tlb9.to(elem1, {
     duration:0,
     y:30,
@@ -130,7 +130,7 @@ tlb9.to(elem1, {
 }
 
 export const bubble10Anim = (elem1) => {
-let tlb10 = gsap.timeline({repeat: 200, delay: 5});
+let tlb10 = gsap.timeline({repeat: -1, delay: 5});
 tlb10.to(elem1, {
     duration:0,
     y:50,
@@ -144,7 +144,7 @@ tlb10.to(elem1, {
 }
 
 export const bubble11Anim = (elem1) => {
-let tlb11 = gsap.timeline({repeat: 200, delay: 3});
+let tlb11 = gsap.timeline({repeat: -1, delay: 3});
 tlb11.to(elem1, {
     duration:0,
     y:50,
@@ -158,7 +158,7 @@ tlb11.to(elem1, {
 }
 
 export const bubble12Anim = (elem1) => {
-let tlb12 = gsap.timeline({repeat: 200, delay: 4});
+let tlb12 = gsap.timeline({repeat: -1, delay: 4});
 tlb12.to(elem1, {
     duration:0,
     y:300,
@@ -172,7 +172,7 @@ tlb12.to(elem1, {
 }
 
 export const bubble14Anim = (elem1) => {
-let tlb14 = gsap.timeline({repeat: 200, delay: 6});
+let tlb14 = gsap.timeline({repeat: -1, delay: 6});
 tlb14.to(elem1, {
     duration:0,
     y:180,
@@ -186,7 +186,7 @@ tlb14.to(elem1, {
 }
 
 export const bubble15Anim = (elem1) => {
-let tlb15 = gsap.timeline({repeat: 200, delay: 0});
+let tlb15 = gsap.timeline({repeat: -1, delay: 0});
 tlb15.to(elem1, {
     duration:0,
     y:300,
@@ -201,7 +201,7 @@ tlb15.to(elem1, {
 }
 
 export const initAnim = (elem1, elem2) => {
-    let tl = gsap.timeline({delay: 1});
+    let tl = gsap.timeline({delay: 0.5});
     tl.from(elem1, {duration: 0.6, ease: "power2. out", opacity:0, y:-40});
     tl.from(elem2, {duration: 0.6, ease: "power2. out", opacity:0});
     }
