@@ -41,14 +41,22 @@
 }
 /*  */
 
+#downloadFace {
+    transform: scale(11) translate(736%, -693%);
+    transition: fill 0.3s ease-in-out;
+}
+
+#downloadFace:hover {
+    fill: #ffb97a;
+    stroke-width: 5;
+    stroke: #ffb97a;
+    filter:url(#glow);
+
+}
+
 #bubble1mainFace {
     transform: scale(25) translate(1.4%, -305%);
 }
-
-#downloadFace {
-    transform: scale(11) translate(735%, -693%);
-}
-
 
 /*  */
 
