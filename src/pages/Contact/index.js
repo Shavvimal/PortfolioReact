@@ -21,19 +21,19 @@ const Contact = () => {
 
                     <form class="flex flex-col ">
                     <div class="flex flex-col pt-4">
-                        <label for="name" class="text-left text-xl">Name:</label>
+                        <label htmlFor="name" class="text-left text-xl">Name:</label>
                         <input class=" text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="name" type="text" placeholder="Shav"  />
                     </div>
 
                     <div class="flex flex-col pt-6">
-                        <label for="email" class="text-left text-xl">Email:</label>
+                        <label htmlFor="email" class="text-left text-xl">Email:</label>
                         <input class=" text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="email" type="email" placeholder="Shav@example.com"  />
                     </div>
 
                     <div class="flex flex-col pt-6 ">
-                        <label for="message" class="text-left text-xl">Message:</label>
+                        <label htmlFor="message" class="text-left text-xl">Message:</label>
                         <textarea class=" h-96 text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="message" type="text" placeholder="Hello!"  />
                     </div>

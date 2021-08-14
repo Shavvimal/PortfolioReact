@@ -158,12 +158,7 @@ const Home = () => {
 
                             <svg className="bubble1Anim2" ref={(el) => (bubble1Anim2 = el)} id='icon1' fill="white" class="w-full h-full" viewBox="0 0 512 512" >
 
-                                <defs>
-                                    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="0%" stop-color="red" />
-                                        <stop offset="100%" stop-color="blue" />
-                                    </linearGradient>
-                                </defs>
+
 
 
                                 <path d="M486.716,60.05H25.284C11.372,60.05,0,71.427,0,85.333v341.333c0,13.906,11.372,25.284,25.284,25.284h461.432 c13.9,0,25.284-11.377,25.284-25.284V85.333C512,71.427,500.616,60.05,486.716,60.05z M493.037,426.666 c0,3.426-2.901,6.321-6.321,6.321H25.284c-3.432,0-6.321-2.895-6.321-6.321V85.333c0-3.426,2.888-6.321,6.321-6.321h461.432 c3.42,0,6.321,2.895,6.321,6.321V426.666z"/>
@@ -419,9 +414,9 @@ const Home = () => {
 
             <NavLink to="/AboutMe" activeClassName="current" onClick={() => toloc("AboutSect")}>
                 <svg id="downarow" class=" w-8  mb-10 -mr-1 mt-80 animate-bounce" viewBox="0 0 20 20" fill="white">
-                    <path fill-rule="evenodd"
+                    <path fillRule="evenodd"
                         d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
+                        clipRule="evenodd"></path>
                 </svg> </NavLink>
 
         </section>
