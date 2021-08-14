@@ -5,11 +5,7 @@ import mainBubble from './assets/Bubble_main.svg'
 import gsap from "gsap"
 
 const TechBubble = ({TechName, Path}) => {
-    // let animHeader  = useRef(null)
 
-    // useEffect(() => {
-    //     finalAnim(animHeader) 
-    // }, [])
 let randSign = () => {
     if (Math.round(Math.random()) === 0) {return -1}
     else {return 1}
@@ -38,7 +34,11 @@ let randSign = () => {
             bubble1Anim(bubble1Anim1)
         }, [])
 
+
+
+        
     return (
+        <div className={TechName.replace(/\s/g, '')} >
         <div class="flex flex-col" 
         className="bubble1Anim1" ref={(el) => (bubble1Anim1 = el)}
         >
@@ -53,7 +53,7 @@ let randSign = () => {
             <div class="techWord flex justify-center">
             <h3 class=" border-2 px-3 py-1  rounded-full text-sm text-center  font-medium  ">{TechName}</h3></div>
         </div>
-
+        </div>
     );
 }
 

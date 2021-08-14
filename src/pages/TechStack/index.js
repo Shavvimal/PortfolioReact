@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './style.css'
 import { } from "./assets/animate.js"
 import { TechBubble} from '../../components';
@@ -67,30 +67,62 @@ const shuffle = (arr) => {
     return arr;
   }
 
-const renderTechBubbles = () => shuffle(techStackBub).map((t, i) => <TechBubble key={i} TechName={t.name} Path={t.Path} />)
 
+
+
+const [checked, setChecked] = React.useState(true);
+
+let handleCheck = (e) => {
+e.preventDefault();
+    setChecked(!checked)
+}
+
+
+const items = useRef([]);
+items.current = [];
+
+const addToRefs = (el) => {
+    items.current = [...items.current, el]
+    console.log(items.current = [])
+};
+
+
+
+
+const renderTechBubbles = () => shuffle(techStackBub).map((t) => <TechBubble key={t.name} TechName={t.name} Path={t.Path} forwardRef={addToRefs}  />)
 
     return (
 
-        <div id="Techsect" class="bg-white raleway  my-20">
+        <div id="Techsect" className="bg-white raleway  my-20" ref={addToRefs} >
 
-            <div class="w-full h-auto flex flex-col gradientTech md:justify-start pb-12 my-auto pt-8 md:pt-0 overflow-hidden text-white">
-                <div class=" px-8 md:px-24 lg:px-44 flex flex-col lg:flex-row">
-                    <div class=" w-full lg:w-3/4">
-                        <h1 class="text-left text-4xl font-extrabold mt-12 w-full">My Tech Stack</h1>
-                        <h2 class="text-left text-2xl py-3 italic w-full" > My preferred combination of programming languages, frameworks, and tools </h2>
-                        <p class="text-left text-xl w-full"> I'm always looking to learn new technologies to widen my skillset. Here are some of the software and technologies that I’m already familiar with.
+            <div className="w-full h-auto flex flex-col gradientTech md:justify-start pb-12 my-auto pt-8 md:pt-0 overflow-hidden text-white">
+                <div className=" px-8 md:px-24 lg:px-44 flex flex-col xl:flex-row ">
+                    <div className=" w-full xl:w-3/4 ">
+                        <h1 className="text-left text-4xl font-extrabold mt-12 w-full">My Tech Stack</h1>
+                        <h2 className="text-left text-2xl py-3 italic w-full" > My preferred combination of programming languages, frameworks, and tools </h2>
+                        <p className="text-left text-xl w-full"> I'm always looking to learn new technologies to widen my skillset. Here are some of the software and technologies that I’m already familiar with.
                         </p></div>
-                    <div class="lg:w-1/4 w-full m-auto">
-                        {/* <label class="inline-flex items-center" />
-                        <input type="checkbox" class="form-checkbox text-indigo-600" />
-                        <span class="ml-2">Option 1</span> */}
+                    <div id="sort" className="xl:w-1/3 w-full mt-6 pt-8 mb-2 text-center flex xl:justify-evenly justify-around flex-wrap xl:ml-20">
+
+
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="all"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3" id="all" defaultChecked={checked} onChange={() => handleCheck()}   /> All </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="core"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="core" defaultChecked={checked} onChange={() => handleCheck()} /> Core Languages </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="testing"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="testing" defaultChecked={checked} onChange={() => handleCheck()} /> Testing </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="creative"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="creative" defaultChecked={checked} onChange={() => handleCheck()} /> Creative </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="database"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="database" defaultChecked={checked} onChange={() => handleCheck()} /> Databases </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="auth"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="auth" defaultChecked={checked} onChange={() => handleCheck()} /> Authorzation </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="cyber"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="cyber" defaultChecked={checked} onChange={() => handleCheck()} /> Cybersecurity </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="UIUX"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="UIUX" defaultChecked={checked} onChange={() => handleCheck()} /> UI & UX </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="python"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="python" defaultChecked={checked} onChange={() => handleCheck()} /> Python </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="other"> <input type="checkbox" className="form-checkbox h-5 w-5 mr-3 filter" id="other" defaultChecked={checked} onChange={() => handleCheck()} /> Others </label>
+                    <label className="inline-flex items-center border-2 px-4 rounded-full py-1 my-2 hover:bg-purple-500 hover:bg-opacity-40" htmlFor="shuffle"> <button type="checkbox" className="form-checkbox h-5 w-auto  filter" id="shuffle" defaultChecked={checked} onClick={() => setChecked(!checked)} > Re-Shuffle </button> </label>
+                    
 
                     </div>
 
                 </div>
 
-                <div class="grid grid-cols-3 lg:grid-cols-6 gap-14 w-full h-full pt-8 p-4">
+                <div className="grid grid-cols-3 lg:grid-cols-6 gap-14 w-full h-full pt-8 p-4">
                 {/* {rows} */}
 
                 {renderTechBubbles()}
