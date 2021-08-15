@@ -49,7 +49,7 @@ const Aside = () => {
       </div>
 
       
-      <div class="flex items-center justify-center mt-2 flex-col"> <NavLink to="/Portfolio" activeClassName="current" onClick={() => toloc("portfoliosect")}>
+      <div class="flex items-center justify-center mt-2 flex-col"> <NavLink to="/Portfolio/Web" activeClassName="current" onClick={() => toloc("portfoliosect")}>
         <button
           class="p-2 mx-auto rounded-full shadow-md  border-indigo-400 hover:bg-indigo-400 hover:text-white  focus:outline-none focus:ring bg-4 focus:ring-pink-400 focus:ring-offset-white focus:ring-offset-2">
         </button> </NavLink>
