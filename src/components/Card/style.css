@@ -68,3 +68,13 @@
   .cross {
     transform: translate(0%, -170%);
   } 
+
+
+  .parentCard {
+    transition: 
+                transform 0.3s ease-in-out;
+  }
+
+  .parentCard:hover{
+    transform: scale(1.1) translate(0%, 0%) ;
+  }
