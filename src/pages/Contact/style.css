@@ -73,3 +73,31 @@ background-color: rgba(133, 83, 254, var(--tw-bg-opacity));
     transform: scale(1.1) translate(0%, 0%);
     /* cursor: pointer; */
   }
+
+
+#icon3contact {
+    text-decoration: none;
+}
+
+#icon3contact  {
+    /* text-shadow: 0 0 1px #ffb97a; */
+    text-shadow: none;
+}
+
+#icon2contact {
+    text-decoration: none;
+}
+
+#icon2contact  {
+    /* text-shadow: 0 0 1px #ffb97a; */
+    text-shadow: none;
+}
+
+#icon1contact {
+    text-decoration: none;
+}
+
+#icon1contact  {
+    /* text-shadow: 0 0 1px #ffb97a; */
+    text-shadow: none;
+}

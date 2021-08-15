@@ -70,7 +70,7 @@ const Contact = () => {
                         </form>
 
                         <div class="flex flex-row justify-around mt-10 mb-2 lg:mb-0 ">
-                            <p> 
+                        <a id="icon1contact" href="https://www.linkedin.com/in/shavvimalendiran/"> 
                                 <div class=" relative mx-auto w-full h-full  flex flex-row parentBubbleContact">
 
                                     <img class="w-1/2 h-1/2 ContactBubble" src={mainBubble} alt="mainBubble1" />
@@ -80,10 +80,10 @@ const Contact = () => {
                                 </div>
                                 <div class="techWord flex justify-center">
                                     <h3 class=" border-2 px-3 py-1 border-black rounded-full text-sm text-center  font-medium  text-black">LinkedIn</h3></div>
-                            </p>
+                            </a>
 
 
-                            <p href="https://github.com/simple-icons/simple-icons/blob/HEAD/slugs.md">
+                            <a id="icon2contact" href="mailto:shavhugan@gmail.com?subject=Hello%20Shav&body=Hi%20Shav," >
                                 <div class=" relative mx-auto w-full h-full  flex flex-row parentBubbleContact">
 
                                     <img class="w-1/2 h-1/2 ContactBubble" src={mainBubble} alt="mainBubble1" />
@@ -93,9 +93,9 @@ const Contact = () => {
                                 </div>
                                 <div class="techWord flex justify-center">
                                     <h3 class=" border-2 px-3 py-1 border-black rounded-full text-sm text-center  font-medium  text-black">Email</h3></div>
-                            </p>
+                            </a>
 
-                            <p class="">
+                            <a id="icon3contact" href="https://github.com/Shavvimal">
                                 <div class="relative mx-auto w-full h-full  flex flex-row parentBubbleContact">
 
                                     <img class="w-1/2 h-1/2 ContactBubble" src={mainBubble} alt="mainBubble1" />
@@ -108,7 +108,7 @@ const Contact = () => {
                                     <h3 class=" border-2 px-3 py-1 border-black rounded-full text-sm text-center  font-medium  text-black">GitHub</h3></div>
 
       
-                            </p>
+                            </a>
 
                             
                         </div>
