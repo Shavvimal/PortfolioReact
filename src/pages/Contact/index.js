@@ -21,7 +21,7 @@ const Contact = () => {
             headers: { "Content-Type": "application/json" }
         };
     
-        fetch('http://localhost:4000/posts', options)
+        fetch('/api/*', options)
             .then(r => r.json())
             .then(() => e.target.reset())
             .catch(console.warn)
