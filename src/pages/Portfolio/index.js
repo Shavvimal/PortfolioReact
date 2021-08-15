@@ -38,8 +38,8 @@ const Portfolio = () => {
 
   const [GraphicsCards, setGraphicsCards] = useState(
 
-    [{ Name: "Galaxy Girl", Description: "This was my first ever digital painting using a graphics tablet. This was a really fun piece to make while learning all the basics of working in a new and different medium. ", gifurl: "https://s6.gifyu.com/images/ezgif.com-gif-makeree71287eb6bb4c5f.gif", repoLink: "https://www.deviantart.com/shavgraphics/art/Galaxy-Girl-847582040", siteLink: "https://youtu.be/jUyj_YXad_k", arrayOfWords: ["Adobe PhotoShop"], graphic:true },
-    { Name: "Zuko on the Beach", Description: "After rewatching one of my favorite shows of all time, Avatar: The Last Airbender, I decided to do a fanart of my favorite scarred Prince - Prince Zuko.", gifurl: "https://s6.gifyu.com/images/ezgif.com-gif-maker-12628d0767c6a0f39.gif", repoLink: "https://www.deviantart.com/shavgraphics/art/Zuko-868343159", siteLink: "https://youtu.be/2audU-MHQ3Q", arrayOfWords: ["Adobe PhotoShop"], graphic:true },
+    [{ Name: "Galaxy Girl", Description: "This was my first ever digital painting using a graphics tablet. This was a really fun piece to make while learning all the basics of working in a new and different medium. ", gifurl: "https://s6.gifyu.com/images/ezgif.com-gif-maker-37543bbb827e9b904.gif", repoLink: "https://www.deviantart.com/shavgraphics/art/Galaxy-Girl-847582040", siteLink: "https://youtu.be/jUyj_YXad_k", arrayOfWords: ["Adobe PhotoShop"], graphic:true },
+    { Name: "Zuko on the Beach", Description: "After rewatching one of my favorite shows of all time, Avatar: The Last Airbender, I decided to do a fanart of my favorite scarred Prince - Prince Zuko.", gifurl: "https://s6.gifyu.com/images/ezgif.com-gif-maker-4a880b21ba506a711.gif", repoLink: "https://www.deviantart.com/shavgraphics/art/Zuko-868343159", siteLink: "https://youtu.be/2audU-MHQ3Q", arrayOfWords: ["Adobe PhotoShop"], graphic:true },
     ]
 
   )
