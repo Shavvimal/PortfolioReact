@@ -5,7 +5,7 @@
 [ ] Lazy Load Gifs 
 [ ] Animate the modals transiton on each card
 [ ] add capton/label words to cv donwload button and title bubbles 
-[ ] switch web/graphic cards based on props/boolean 
+[x] switch web/graphic cards based on props/boolean 
 [ ] Route without switch 
 [ ] image parallax on portfolio
 
