@@ -51,7 +51,7 @@ let randSign = () => {
 
             </div>
             <div class="techWord flex justify-center">
-            <h3 class=" border-2 px-3 py-1  rounded-full text-sm text-center  font-medium  ">{TechName}</h3></div>
+            <h3 class=" border-2 px-3 py-1 border-white rounded-full text-sm text-center  font-medium  ">{TechName}</h3></div>
         </div>
         </div>
     );

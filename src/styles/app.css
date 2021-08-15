@@ -19,13 +19,14 @@ h1, h2 ,h3, h4, p{
 /* Scrollbar Edit  */
 /* width */
 ::-webkit-scrollbar {
-    width: 0.6rem;
+    width: 10px;
+    height: 0px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
   /* margin-right: 5px; */
-margin: 1.5;
+margin: 0.5;
     background: #ffffff; 
   }
    

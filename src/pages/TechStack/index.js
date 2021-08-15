@@ -68,7 +68,7 @@ const shuffle = (arr) => {
   }
 
 
-
+// Checkboxes
 
 const [checked, setChecked] = React.useState(true);
 
@@ -87,9 +87,9 @@ const addToRefs = (el) => {
 };
 
 
+//  render 
 
-
-const renderTechBubbles = () => shuffle(techStackBub).map((t) => <TechBubble key={t.name} TechName={t.name} Path={t.Path} forwardRef={addToRefs}  />)
+const renderTechBubbles = () => shuffle(techStackBub).map((t) => <TechBubble key={t.name} TechName={t.name} Path={t.Path} forwardRef={addToRefs}   />)
 
     return (
 
