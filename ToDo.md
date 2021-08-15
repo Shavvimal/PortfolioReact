@@ -8,6 +8,7 @@
 [x] switch web/graphic cards based on props/boolean 
 [ ] Route without switch 
 [ ] image parallax on portfolio
+[ ] Scroll trigger headings 
 
 ## Bugs 
 [ ] Need to fix Routing Reload error
