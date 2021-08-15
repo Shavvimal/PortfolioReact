@@ -6,7 +6,26 @@ import mainBubble from './assets/Bubble_main.svg'
 
 
 const Contact = () => {
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        
+        const postData = {
+            "name": e.target.name.value,
+            "email": e.target.email.value,
+            "message": e.target.messageShav.value
+        };
+    
+        const options = { 
+            method: 'POST',
+            body: JSON.stringify(postData),
+            headers: { "Content-Type": "application/json" }
+        };
+    
+        fetch('http://localhost:4000/posts', options)
+            .then(r => r.json())
+            .then(() => e.target.reset())
+            .catch(console.warn)
+      };
 
     return (
         <>    <a id="contactsect" ></a>
@@ -19,23 +38,26 @@ const Contact = () => {
                     <h2 class="text-left text-2xl py-3 italic" > Please drop a message to say hello and get in touch! I‘d love to hear from you.  </h2>
 
 
-                    <form class="flex flex-col ">
+                    <form class="flex flex-col " onSubmit={handleSubmit}>
+
                     <div class="flex flex-col pt-4">
                         <label htmlFor="name" class="text-left text-xl">Name:</label>
                         <input class=" text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="name" type="text" placeholder="Shav"  />
                     </div>
-
+                    
                     <div class="flex flex-col pt-6">
                         <label htmlFor="email" class="text-left text-xl">Email:</label>
                         <input class=" text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
                         focus:border" name="email" type="email" placeholder="Shav@example.com"  />
                     </div>
 
+
+
                     <div class="flex flex-col pt-6 ">
-                        <label htmlFor="message" class="text-left text-xl">Message:</label>
+                        <label htmlFor="messageShav" class="text-left text-xl">Message:</label>
                         <textarea class=" h-96 text-xl shadow border rounded-md w-full py-2 px-3 text-gray-700 mt-1 leading-tight  outline-none focus:outline-none focus-within:border-blue-400 transition-all duration-500
-                        focus:border" name="message" type="text" placeholder="Hello!"  />
+                        focus:border" name="messageShav" type="text" placeholder="Hello!"  />
                     </div>
  
                     <input class=" text-white bg-custom rounded-full focus:bg-purple-700 w-auto px-28 font-bold text-lg p-2 mt-8" name="message" type="submit" value="Get In Touch"  />
