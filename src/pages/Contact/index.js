@@ -21,7 +21,7 @@ const Contact = () => {
             headers: { "Content-Type": "application/json" }
         };
     
-        fetch('http://13.59.11.193:443/posts', options)
+        fetch('/api/*', options)
             .then(r => r.json())
             .then(() => e.target.reset())
             .catch(console.warn)
