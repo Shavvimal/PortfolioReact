@@ -5,10 +5,11 @@
 [ ] Lazy Load Gifs 
 [ ] Animate the modals transiton on each card
 [ ] add capton/label words to cv donwload button and title bubbles 
-[ ] switch web/graphic cards based on props/boolean 
+[x] switch web/graphic cards based on props/boolean 
 [ ] Route without switch 
 [ ] image parallax on portfolio
+[ ] Scroll trigger headings 
 
 ## Bugs 
-[ ] Need to fix Routing Reload error
+[x] Need to fix Routing Reload error
 [ ] Header and Aside Nav Scroltrigger relative to themselves. Need to use ref, so not dependent on window load location 

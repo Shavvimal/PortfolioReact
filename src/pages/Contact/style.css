@@ -22,5 +22,82 @@ background-color: rgba(133, 83, 254, var(--tw-bg-opacity));
   }
 
   #contact-card {
-      transform: translate(0%, -30%);
+      transform: translate(0%, -8%);
   }
+
+
+
+
+  .ContactBubble {
+    transform: scale(2) translate(25%, 20%);
+    opacity: 0;
+    transition: 
+    opacity 0.2s ease-in-out;
+
+}
+
+.iconContact {
+    transform: scale(1) translate(-50%, 40%);
+    transition: fill 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+
+  .parentBubbleContact {
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .parentBubbleContact:hover .iconContact {
+    fill: #ffffff;
+    transform: scale(1.1) translate(-45%, 36%);
+    cursor: pointer;
+  }
+
+  .parentBubbleContact:hover{
+    transform: scale(1.1) translate(0%, 0%) ;
+  }
+
+  .parentBubbleContact:hover .ContactBubble{
+    opacity: 1 ;
+  }
+
+  .techWord {
+    opacity: 0;
+    transform: scale(0.5) translate(0%, 0%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+  }
+
+  .parentBubbleContact:hover ~ .techWord {
+    opacity: 1;
+    transform: scale(1.1) translate(0%, 0%);
+    /* cursor: pointer; */
+  }
+
+
+#icon3contact {
+    text-decoration: none;
+}
+
+#icon3contact  {
+    /* text-shadow: 0 0 1px #ffb97a; */
+    text-shadow: none;
+}
+
+#icon2contact {
+    text-decoration: none;
+}
+
+#icon2contact  {
+    /* text-shadow: 0 0 1px #ffb97a; */
+    text-shadow: none;
+}
+
+#icon1contact {
+    text-decoration: none;
+}
+
+#icon1contact  {
+    /* text-shadow: 0 0 1px #ffb97a; */
+    text-shadow: none;
+}
