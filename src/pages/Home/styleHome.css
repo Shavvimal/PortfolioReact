@@ -1,223 +1,215 @@
-
-
 section.slide1 {
-    background-image: linear-gradient(to bottom right, #318aff, #b633fd);
-    z-index:0;
-    height: 100vh;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.2vw;
-    line-height: 3vw;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  section.slide1 span{
-    color: #ffb97a;
-  }
-  
-  
-  #downarow{ 
-    position: absolute;
-    bottom: 0; 
-    left:5%;
-  }
-  
-  .squiggle1 {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 49%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
-    z-index:-1;
-  
-  }
-  
-  .squiggle2 {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
-    transform: rotate(350deg);
-    z-index:-1;
-  }
-  
-  .dots {
-    display: block;
-    position: absolute;
-    top: -5%;
-    left: 2%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: scale(0.7);
-    z-index:-1;
-  }
-  
- 
-  .overlay {
-    position: absolute;
-    z-index: 1;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-  }
-  
-  
-  .content {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .pos-bub-1{
-    transform: scale(2.3) translate(85%, 75%);
-  }
-  
-  .pos-bub-2{
-    transform: scale(3) translate(97%, 80%) rotate(0deg);
-  }
-  
-  .pos-bub-3{
-    transform: scale(1.62) translate(278%, 89%) rotate(0deg);
-  }
-  
-  .pos-bub-4{
-    transform: scale(2.1) translate(90%, 90%);
-  }
-  
-  .sizebub {
+  background-color: #318aff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23318AFF' cx='50' cy='0' r='50'/%3E%3Cg fill='%233886ff' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e81ff' cx='50' cy='100' r='50'/%3E%3Cg fill='%23457dff' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%234c79ff' cx='50' cy='200' r='50'/%3E%3Cg fill='%235274ff' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235970fe' cx='50' cy='300' r='50'/%3E%3Cg fill='%23606cfe' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236667fe' cx='50' cy='400' r='50'/%3E%3Cg fill='%236d63fe' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23745ffe' cx='50' cy='500' r='50'/%3E%3Cg fill='%237a5afe' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%238156fe' cx='50' cy='600' r='50'/%3E%3Cg fill='%238751fe' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%238e4dfe' cx='50' cy='700' r='50'/%3E%3Cg fill='%239549fe' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%239b44fd' cx='50' cy='800' r='50'/%3E%3Cg fill='%23a240fd' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a93cfd' cx='50' cy='900' r='50'/%3E%3Cg fill='%23af37fd' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23B633FD' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+
+  z-index: 0;
+  height: 100vh;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2vw;
+  line-height: 3vw;
+  overflow: hidden;
+  position: relative;
+}
+
+section.slide1 span {
+  color: #ffb97a;
+}
+
+#downarow {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.squiggle1 {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 49%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.squiggle2 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  transform: rotate(350deg);
+  z-index: -1;
+}
+
+.dots {
+  display: block;
+  position: absolute;
+  top: -5%;
+  left: 2%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: scale(0.7);
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos-bub-1 {
+  transform: scale(2.3) translate(85%, 75%);
+}
+
+.pos-bub-2 {
+  transform: scale(3) translate(97%, 80%) rotate(0deg);
+}
+
+.pos-bub-3 {
+  transform: scale(1.62) translate(278%, 89%) rotate(0deg);
+}
+
+.pos-bub-4 {
+  transform: scale(2.1) translate(90%, 90%);
+}
+
+.sizebub {
   height: 13%;
   width: 7%;
-  }
+}
 
-  #bubble1main {
-    transform: rotate(230deg);
-  }
-  
-  #bubble3main {
-    transform: rotate(-40deg);
-  }
-  
-  #bubble4main {
-    transform: rotate(-60deg);
-  }
+#bubble1main {
+  transform: rotate(230deg);
+}
 
-  /*  */
+#bubble3main {
+  transform: rotate(-40deg);
+}
 
-
-  #icon1 {
-    transform: scale(0.48) translate(0%, 0%);
-  }
-
-  #bubble1parent #icon1 {
-    transition: fill 0.3s ease-in-out;
-  }
-
-  #bubble1parent{
-  transition: transform 0.3s ease-in-out;
-  }
-
-  #bubble1parent:hover #icon1 {
-    fill: #ffb97a;
-    stroke-width: 5;
-    stroke: #ffb97a;
-    filter:url(#glow);
-    transform: scale(1.1,1.1);
-    cursor: pointer;
-  }
-
-  #bubble1parent:hover{
-  transform: scale(2.4) translate(81.5%, 73%);
-  }
-
+#bubble4main {
+  transform: rotate(-60deg);
+}
 
 /*  */
 
+#icon1 {
+  transform: scale(0.48) translate(0%, 0%);
+}
 
-  #icon2 {
-    transform: scale(0.41) translate(0%, 0%);
-  }
+#bubble1parent #icon1 {
+  transition: fill 0.3s ease-in-out;
+}
 
-  #bubble2parent #icon2 {
-    transition: fill 0.3s ease-in-out;
-  }
-
-  #bubble2parent{
+#bubble1parent {
   transition: transform 0.3s ease-in-out;
-  }
+}
 
-  #bubble2parent:hover #icon2 {
-    fill: #ffb97a;
-    stroke-width: 5;
-    stroke: #ffb97a;
-    filter:url(#glow);
-    transform: scale(1.1,1.1);
-    cursor: pointer;
-  }
+#bubble1parent:hover #icon1 {
+  fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
 
-  #bubble2parent:hover{
-    transform: scale(3.1) translate(94%, 78%) rotate(0deg);
-  }
+#bubble1parent:hover {
+  transform: scale(2.4) translate(81.5%, 73%);
+}
 
+/*  */
 
+#icon2 {
+  transform: scale(0.41) translate(0%, 0%);
+}
 
-  /*  */
-  
-  #icon3 {
-    transform: scale(0.5) translate(0%, 0%);
-  }
+#bubble2parent #icon2 {
+  transition: fill 0.3s ease-in-out;
+}
 
-  #bubble3parent #icon3 {
-    transition: fill 0.3s ease-in-out;
-  }
-
-  #bubble3parent{
+#bubble2parent {
   transition: transform 0.3s ease-in-out;
-  }
+}
 
-  #bubble3parent:hover #icon3 {
-    fill: #ffb97a;
-    stroke-width: 5;
-    stroke: #ffb97a;
-    filter:url(#glow);
-    transform: scale(1.1,1.1);
-    cursor: pointer;
-  }
+#bubble2parent:hover #icon2 {
+  fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
 
-  #bubble3parent:hover{
-    transform: scale(1.72) translate(262.5%, 84%);
-  }
+#bubble2parent:hover {
+  transform: scale(3.1) translate(94%, 78%) rotate(0deg);
+}
 
+/*  */
 
-  /*  */
-  
-  #icon4 {
-    transform: scale(0.45) translate(0%, 0%);
-  }
+#icon3 {
+  transform: scale(0.5) translate(0%, 0%);
+}
 
-  #bubble4parent #icon4 {
-    transition: fill 0.3s ease-in-out;
-  }
+#bubble3parent #icon3 {
+  transition: fill 0.3s ease-in-out;
+}
 
-  #bubble4parent{
+#bubble3parent {
   transition: transform 0.3s ease-in-out;
-  }
+}
 
-  #bubble4parent:hover #icon4 {
-    fill: #ffb97a;
-    stroke-width: 5;
-    stroke: #ffb97a;
-    filter:url(#glow);
-    transform: scale(1.1,1.1);
-    cursor: pointer;
-  }
+#bubble3parent:hover #icon3 {
+  fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
 
-  #bubble4parent:hover{
-    transform: scale(2.2) translate(86%, 86%);
-  }
+#bubble3parent:hover {
+  transform: scale(1.72) translate(262.5%, 84%);
+}
+
+/*  */
+
+#icon4 {
+  transform: scale(0.45) translate(0%, 0%);
+}
+
+#bubble4parent #icon4 {
+  transition: fill 0.3s ease-in-out;
+}
+
+#bubble4parent {
+  transition: transform 0.3s ease-in-out;
+}
+
+#bubble4parent:hover #icon4 {
+  fill: #ffb97a;
+  stroke-width: 5;
+  stroke: #ffb97a;
+  filter: url(#glow);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+#bubble4parent:hover {
+  transform: scale(2.2) translate(86%, 86%);
+}
