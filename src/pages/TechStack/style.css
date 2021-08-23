@@ -12,3 +12,7 @@
   background-attachment: fixed;
   background-size: contain;
 }
+
+.hidden_style {
+  font-family: "Heebo", sans-serif;
+}
