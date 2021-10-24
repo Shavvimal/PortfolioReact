@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {Home, AboutMe, TechStack, Portfolio, Contact} from './pages';
+import { Home, AboutMe, TechStack, Portfolio, Contact } from './pages';
 import { Header, Modal, Aside } from './layout';
 import './styles/app.css';
 
 
-function App(){
+function App() {
 
     const [ModalClose, setModalClose] = useState(false);
 
@@ -14,13 +14,13 @@ function App(){
 
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
-      }
+    }
 
 
     return (
         <>
             <Header />
-            <Aside /> 
+            <Aside />
             <Home />
             <AboutMe />
             <TechStack />
